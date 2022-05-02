@@ -1,16 +1,16 @@
-# This is a sample Python script.
+show_instructions = input("Have you played Lucky Unicorn before?").lower()
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+if show_instructions.lower() == "yes":
+    print("Program continues")
 
+elif show_instructions.lower() == "y":
+    print("Display instructions")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+elif show_instructions == "no":
+    print("Display instructions")
 
+elif show_instructions == "n":
+    print("Display instructions")
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+else:
+    print("Please enter yes or no")
